@@ -1,8 +1,6 @@
 FROM python:3.9-alpine3.13
 LABEL maintainer="DHAWAL MALOT"
 
-
-#line below tells python that it doesn't wanna buffer the output from python. Instead it will print the output directly to the console
 ENV PYTHONUNBUFFERED 1 
 
 COPY ./requirements.txt /tmp/requirements.txt
